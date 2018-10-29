@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Classes Abstratas: Código-Fonte de circulo.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="expo_nac_arte_abstrata2.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Classes Abstratas
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">2° Projeto Computação Numérica- UFRN</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">circulo.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CIRCULO_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CIRCULO_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;figurageometrica.h&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;screen.h&quot;</span></div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_circulo.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_circulo.html">Circulo</a> : <span class="keyword">public</span> <a class="code" href="class_figura_geometrica.html">FiguraGeometrica</a>{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">int</span> Xc,Yc,raio;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">int</span> fullmode;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">char</span> brush;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_circulo.html#a68c5a9226f3a366c5b92fc523e281fac">Circulo</a>(<span class="keywordtype">int</span> _xc, <span class="keywordtype">int</span> _yc, <span class="keywordtype">int</span> _raio, <span class="keywordtype">int</span> fullmode, <span class="keywordtype">char</span> _brush);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_circulo.html#a593787d6e0618c2eded23e8839e7bea6">draw</a>(<a class="code" href="class_screen.html">Screen</a> &amp;t);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_circulo.html#ae6d005ce309278d2f2ca170fdfa64e0a">pontosdacircunferencia</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <a class="code" href="class_screen.html">Screen</a> &amp;t);</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_circulo.html#a4f0f6781f9ec3f501539f28a7788e9f1">preencher</a>(<a class="code" href="class_screen.html">Screen</a> &amp;t);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif // CIRCULO_H</span></div><div class="ttc" id="class_circulo_html"><div class="ttname"><a href="class_circulo.html">Circulo</a></div><div class="ttdoc">A classe Circulo é uma subclasse da FiguraGeometrica e serve para desenhar circunferência e círculos ...</div><div class="ttdef"><b>Definition:</b> circulo.h:9</div></div>
+<div class="ttc" id="class_screen_html"><div class="ttname"><a href="class_screen.html">Screen</a></div><div class="ttdoc">A classe Screen é a tela a ser desenhada. </div><div class="ttdef"><b>Definition:</b> screen.h:11</div></div>
+<div class="ttc" id="class_figura_geometrica_html"><div class="ttname"><a href="class_figura_geometrica.html">FiguraGeometrica</a></div><div class="ttdoc">A classe FiguraGeometrica serve para facilitar na construção das figuras geométricas. </div><div class="ttdef"><b>Definition:</b> figurageometrica.h:8</div></div>
+<div class="ttc" id="class_circulo_html_a593787d6e0618c2eded23e8839e7bea6"><div class="ttname"><a href="class_circulo.html#a593787d6e0618c2eded23e8839e7bea6">Circulo::draw</a></div><div class="ttdeci">void draw(Screen &amp;t)</div><div class="ttdoc">draw É uma função que permite desenhar na tela. </div><div class="ttdef"><b>Definition:</b> circulo.cpp:43</div></div>
+<div class="ttc" id="class_circulo_html_ae6d005ce309278d2f2ca170fdfa64e0a"><div class="ttname"><a href="class_circulo.html#ae6d005ce309278d2f2ca170fdfa64e0a">Circulo::pontosdacircunferencia</a></div><div class="ttdeci">void pontosdacircunferencia(int x, int y, Screen &amp;t)</div><div class="ttdoc">pontosdacircunferencia É a função que espelha os pontos do círculo </div><div class="ttdef"><b>Definition:</b> circulo.cpp:18</div></div>
+<div class="ttc" id="class_circulo_html_a4f0f6781f9ec3f501539f28a7788e9f1"><div class="ttname"><a href="class_circulo.html#a4f0f6781f9ec3f501539f28a7788e9f1">Circulo::preencher</a></div><div class="ttdeci">void preencher(Screen &amp;t)</div><div class="ttdoc">preencher É a função que preenche a circuferência, transformando em círculo. </div><div class="ttdef"><b>Definition:</b> circulo.cpp:29</div></div>
+<div class="ttc" id="class_circulo_html_a68c5a9226f3a366c5b92fc523e281fac"><div class="ttname"><a href="class_circulo.html#a68c5a9226f3a366c5b92fc523e281fac">Circulo::Circulo</a></div><div class="ttdeci">Circulo(int _xc, int _yc, int _raio, int fullmode, char _brush)</div><div class="ttdoc">Circulo Circulo é o construtor da classe Circulo. </div><div class="ttdef"><b>Definition:</b> circulo.cpp:4</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>
