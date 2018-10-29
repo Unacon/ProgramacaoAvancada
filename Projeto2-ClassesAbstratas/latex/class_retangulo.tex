@@ -1,0 +1,99 @@
+\hypertarget{class_retangulo}{}\section{Referência à classe Retangulo}
+\label{class_retangulo}\index{Retangulo@{Retangulo}}
+
+
+A classe \mbox{\hyperlink{class_retangulo}{Retangulo}} é uma subclasse da \mbox{\hyperlink{class_figura_geometrica}{Figura\+Geometrica}} e desenha retângulo na tela.  
+
+
+
+
+{\ttfamily \#include $<$retangulo.\+h$>$}
+
+Diagrama de heranças da classe Retangulo\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_retangulo}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_retangulo_a98680c1886ca4caccfe37f7084bbf499}{Retangulo}} (int \+\_\+xe, int \+\_\+ye, int \+\_\+larg, int \+\_\+alt, int fullmode, char \+\_\+brush)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_retangulo}{Retangulo}} É o construtor da classe \mbox{\hyperlink{class_retangulo}{Retangulo}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_retangulo_ac088dd6d3f4f3d3f80363a868c2e74f1}{draw}} (\mbox{\hyperlink{class_screen}{Screen}} \&t)
+\begin{DoxyCompactList}\small\item\em draw É a função para desenhar na tela. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+A classe \mbox{\hyperlink{class_retangulo}{Retangulo}} é uma subclasse da \mbox{\hyperlink{class_figura_geometrica}{Figura\+Geometrica}} e desenha retângulo na tela. 
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\mbox{\Hypertarget{class_retangulo_a98680c1886ca4caccfe37f7084bbf499}\label{class_retangulo_a98680c1886ca4caccfe37f7084bbf499}} 
+\index{Retangulo@{Retangulo}!Retangulo@{Retangulo}}
+\index{Retangulo@{Retangulo}!Retangulo@{Retangulo}}
+\subsubsection{\texorpdfstring{Retangulo()}{Retangulo()}}
+{\footnotesize\ttfamily Retangulo\+::\+Retangulo (\begin{DoxyParamCaption}\item[{int}]{\+\_\+xe,  }\item[{int}]{\+\_\+ye,  }\item[{int}]{\+\_\+larg,  }\item[{int}]{\+\_\+alt,  }\item[{int}]{fullmode,  }\item[{char}]{\+\_\+brush }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_retangulo}{Retangulo}} É o construtor da classe \mbox{\hyperlink{class_retangulo}{Retangulo}}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em \+\_\+xe} & É o x do canto superior esquerdo do retângulo. \\
+\hline
+{\em \+\_\+ye} & É o y do canto superior esquerdo da retângulo. \\
+\hline
+{\em \+\_\+larg} & É a largura do retângulo. \\
+\hline
+{\em \+\_\+alt} & É a altura do retângulo. \\
+\hline
+{\em fullmode} & Determinada se o retângulo será preenchido. \\
+\hline
+{\em \+\_\+brush} & É o caractere a ser usado para desenhar. 
+\begin{DoxyPre}
+int main (void)\{
+     \mbox{\hyperlink{class_retangulo}{Retangulo}} x(0,0,5,5,1,'p');
+     return 0;
+\}
+\end{DoxyPre}
+ \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentação dos métodos}
+\mbox{\Hypertarget{class_retangulo_ac088dd6d3f4f3d3f80363a868c2e74f1}\label{class_retangulo_ac088dd6d3f4f3d3f80363a868c2e74f1}} 
+\index{Retangulo@{Retangulo}!draw@{draw}}
+\index{draw@{draw}!Retangulo@{Retangulo}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Retangulo\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_screen}{Screen}} \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+draw É a função para desenhar na tela. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em t} & É a tela. 
+\begin{DoxyPre}
+int main (void)\{
+     \mbox{\hyperlink{class_retangulo}{Retangulo}} x(0,0,5,5,1,'p');
+     \mbox{\hyperlink{class_screen}{Screen}} tela(20,20);
+     x.draw(tela);
+     return 0;
+\}
+\end{DoxyPre}
+ \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \mbox{\hyperlink{class_figura_geometrica_a8ee8dedc060b6059a805ea091aef2c41}{Figura\+Geometrica}}.
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\+:\begin{DoxyCompactItemize}
+\item 
+retangulo.\+h\item 
+retangulo.\+cpp\end{DoxyCompactItemize}

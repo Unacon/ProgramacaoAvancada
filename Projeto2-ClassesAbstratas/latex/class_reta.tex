@@ -1,0 +1,97 @@
+\hypertarget{class_reta}{}\section{Referência à classe Reta}
+\label{class_reta}\index{Reta@{Reta}}
+
+
+A classe \mbox{\hyperlink{class_reta}{Reta}} é uma subclasse da \mbox{\hyperlink{class_figura_geometrica}{Figura\+Geometrica}} e desenha reta na tela.  
+
+
+
+
+{\ttfamily \#include $<$reta.\+h$>$}
+
+Diagrama de heranças da classe Reta\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_reta}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_reta_aa399d9c0a34aafd01ce4017f49731148}{Reta}} (int \+\_\+xi, int \+\_\+yi, int \+\_\+xf, int \+\_\+yf, char \+\_\+brush)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_reta}{Reta}} É o construtor da classe \mbox{\hyperlink{class_reta}{Reta}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_reta_ac2e9805183cd474b62bffd8b032cd780}{draw}} (\mbox{\hyperlink{class_screen}{Screen}} \&t)
+\begin{DoxyCompactList}\small\item\em draw É uma função que permite desenhar na tela. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+A classe \mbox{\hyperlink{class_reta}{Reta}} é uma subclasse da \mbox{\hyperlink{class_figura_geometrica}{Figura\+Geometrica}} e desenha reta na tela. 
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\mbox{\Hypertarget{class_reta_aa399d9c0a34aafd01ce4017f49731148}\label{class_reta_aa399d9c0a34aafd01ce4017f49731148}} 
+\index{Reta@{Reta}!Reta@{Reta}}
+\index{Reta@{Reta}!Reta@{Reta}}
+\subsubsection{\texorpdfstring{Reta()}{Reta()}}
+{\footnotesize\ttfamily Reta\+::\+Reta (\begin{DoxyParamCaption}\item[{int}]{\+\_\+xi,  }\item[{int}]{\+\_\+yi,  }\item[{int}]{\+\_\+xf,  }\item[{int}]{\+\_\+yf,  }\item[{char}]{\+\_\+brush }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_reta}{Reta}} É o construtor da classe \mbox{\hyperlink{class_reta}{Reta}}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em \+\_\+xi} & É o x inicial da reta. \\
+\hline
+{\em \+\_\+yi} & É o y inicial da reta \\
+\hline
+{\em \+\_\+xf} & É o x final da reta. \\
+\hline
+{\em \+\_\+yf} & É o y final da reta. \\
+\hline
+{\em \+\_\+brush} & É o caractere a ser usado para desenhar. 
+\begin{DoxyPre}
+int main(void)\{
+     \mbox{\hyperlink{class_reta}{Reta}} x(0,0,5,5,'*');
+     return 0;
+\}
+\end{DoxyPre}
+ \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentação dos métodos}
+\mbox{\Hypertarget{class_reta_ac2e9805183cd474b62bffd8b032cd780}\label{class_reta_ac2e9805183cd474b62bffd8b032cd780}} 
+\index{Reta@{Reta}!draw@{draw}}
+\index{draw@{draw}!Reta@{Reta}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Reta\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_screen}{Screen}} \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+draw É uma função que permite desenhar na tela. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em t} & É a tela. 
+\begin{DoxyPre}
+int main(void)\{
+     \mbox{\hyperlink{class_reta}{Reta}} x(0,0,5,5,'*');
+     \mbox{\hyperlink{class_screen}{Screen}} tela(20,20);
+     x.draw(tela);
+     return 0;
+\}
+\end{DoxyPre}
+ \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \mbox{\hyperlink{class_figura_geometrica_a8ee8dedc060b6059a805ea091aef2c41}{Figura\+Geometrica}}.
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\+:\begin{DoxyCompactItemize}
+\item 
+reta.\+h\item 
+reta.\+cpp\end{DoxyCompactItemize}

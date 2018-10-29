@@ -1,0 +1,143 @@
+\hypertarget{class_circulo}{}\section{Referência à classe Circulo}
+\label{class_circulo}\index{Circulo@{Circulo}}
+
+
+A classe \mbox{\hyperlink{class_circulo}{Circulo}} é uma subclasse da \mbox{\hyperlink{class_figura_geometrica}{Figura\+Geometrica}} e serve para desenhar circunferência e círculos na tela.  
+
+
+
+
+{\ttfamily \#include $<$circulo.\+h$>$}
+
+Diagrama de heranças da classe Circulo\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_circulo}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_circulo_a68c5a9226f3a366c5b92fc523e281fac}{Circulo}} (int \+\_\+xc, int \+\_\+yc, int \+\_\+raio, int fullmode, char \+\_\+brush)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_circulo}{Circulo}} \mbox{\hyperlink{class_circulo}{Circulo}} é o construtor da classe \mbox{\hyperlink{class_circulo}{Circulo}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_circulo_a593787d6e0618c2eded23e8839e7bea6}{draw}} (\mbox{\hyperlink{class_screen}{Screen}} \&t)
+\begin{DoxyCompactList}\small\item\em draw É uma função que permite desenhar na tela. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_circulo_ae6d005ce309278d2f2ca170fdfa64e0a}{pontosdacircunferencia}} (int x, int y, \mbox{\hyperlink{class_screen}{Screen}} \&t)
+\begin{DoxyCompactList}\small\item\em pontosdacircunferencia É a função que espelha os pontos do círculo \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_circulo_a4f0f6781f9ec3f501539f28a7788e9f1}{preencher}} (\mbox{\hyperlink{class_screen}{Screen}} \&t)
+\begin{DoxyCompactList}\small\item\em preencher É a função que preenche a circuferência, transformando em círculo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+A classe \mbox{\hyperlink{class_circulo}{Circulo}} é uma subclasse da \mbox{\hyperlink{class_figura_geometrica}{Figura\+Geometrica}} e serve para desenhar circunferência e círculos na tela. 
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\mbox{\Hypertarget{class_circulo_a68c5a9226f3a366c5b92fc523e281fac}\label{class_circulo_a68c5a9226f3a366c5b92fc523e281fac}} 
+\index{Circulo@{Circulo}!Circulo@{Circulo}}
+\index{Circulo@{Circulo}!Circulo@{Circulo}}
+\subsubsection{\texorpdfstring{Circulo()}{Circulo()}}
+{\footnotesize\ttfamily Circulo\+::\+Circulo (\begin{DoxyParamCaption}\item[{int}]{\+\_\+xc,  }\item[{int}]{\+\_\+yc,  }\item[{int}]{\+\_\+raio,  }\item[{int}]{fullmode,  }\item[{char}]{\+\_\+brush }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_circulo}{Circulo}} \mbox{\hyperlink{class_circulo}{Circulo}} é o construtor da classe \mbox{\hyperlink{class_circulo}{Circulo}}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em \+\_\+xc} & É a coordenada X do centro da circunferência ou círculo. \\
+\hline
+{\em \+\_\+yc} & É a coordenada Y do centro da circunferência ou círculo. \\
+\hline
+{\em \+\_\+raio} & É o tamanho do raio. \\
+\hline
+{\em fullmode} & Determinada se é círculo ou circunfêrencia. \\
+\hline
+{\em \+\_\+brush} & É o caractere a ser usado para desenhar. 
+\begin{DoxyPre}
+int main(void)\{
+     \mbox{\hyperlink{class_circulo}{Circulo}} x(10,10,5,1,'+');
+     return 0;
+\}
+\end{DoxyPre}
+ \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentação dos métodos}
+\mbox{\Hypertarget{class_circulo_a593787d6e0618c2eded23e8839e7bea6}\label{class_circulo_a593787d6e0618c2eded23e8839e7bea6}} 
+\index{Circulo@{Circulo}!draw@{draw}}
+\index{draw@{draw}!Circulo@{Circulo}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Circulo\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_screen}{Screen}} \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+draw É uma função que permite desenhar na tela. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em t} & É a tela. 
+\begin{DoxyPre}
+int main(void)\{
+     \mbox{\hyperlink{class_circulo}{Circulo}} x(10,10,5,1,'+');
+     \mbox{\hyperlink{class_screen}{Screen}} tela(20,20);
+     x.draw(t);
+     return 0;
+\}
+\end{DoxyPre}
+ \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \mbox{\hyperlink{class_figura_geometrica_a8ee8dedc060b6059a805ea091aef2c41}{Figura\+Geometrica}}.
+
+\mbox{\Hypertarget{class_circulo_ae6d005ce309278d2f2ca170fdfa64e0a}\label{class_circulo_ae6d005ce309278d2f2ca170fdfa64e0a}} 
+\index{Circulo@{Circulo}!pontosdacircunferencia@{pontosdacircunferencia}}
+\index{pontosdacircunferencia@{pontosdacircunferencia}!Circulo@{Circulo}}
+\subsubsection{\texorpdfstring{pontosdacircunferencia()}{pontosdacircunferencia()}}
+{\footnotesize\ttfamily void Circulo\+::pontosdacircunferencia (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{\mbox{\hyperlink{class_screen}{Screen}} \&}]{t }\end{DoxyParamCaption})}
+
+
+
+pontosdacircunferencia É a função que espelha os pontos do círculo 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em x} & É a coordenada x do ponto. \\
+\hline
+{\em y} & É a coordenada y do ponto. \\
+\hline
+{\em t} & É tela. 
+\begin{DoxyPre}
+Essa função é auxiliar da função draw.
+\end{DoxyPre}
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_circulo_a4f0f6781f9ec3f501539f28a7788e9f1}\label{class_circulo_a4f0f6781f9ec3f501539f28a7788e9f1}} 
+\index{Circulo@{Circulo}!preencher@{preencher}}
+\index{preencher@{preencher}!Circulo@{Circulo}}
+\subsubsection{\texorpdfstring{preencher()}{preencher()}}
+{\footnotesize\ttfamily void Circulo\+::preencher (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_screen}{Screen}} \&}]{t }\end{DoxyParamCaption})}
+
+
+
+preencher É a função que preenche a circuferência, transformando em círculo. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em t} & É a tela. 
+\begin{DoxyPre}
+Essa função é auxiliar da função draw.
+\end{DoxyPre}
+ \\
+\hline
+\end{DoxyParams}
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\+:\begin{DoxyCompactItemize}
+\item 
+circulo.\+h\item 
+circulo.\+cpp\end{DoxyCompactItemize}
